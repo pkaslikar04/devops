@@ -1,0 +1,17 @@
+SeleniumWithCucucumber
+
+Pipeline 
+node {
+
+   stage('CheckOut') {
+   git changelog: false, poll: false, url: 'https://github.com/pkaslikar04/SeleniumWithCucucumber.git'
+}
+
+   stage('Build and Verify') {
+   sh '/usr/local/apache-maven-3.5.0/bin/mvn verify'
+}
+
+stage('Generate Reports') {
+    cucumber '**/*.json'
+}
+}
