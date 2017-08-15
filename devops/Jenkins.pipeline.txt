@@ -1,3 +1,7 @@
+1) Install Jenkins, tomcat, maven, chrome/firefox, git
+2) Install plugins cucumber reports, maven 
+3) Global Tool Configuration  - set path maven, java, git
+
 SeleniumWithCucucumber
 
 Pipeline 
